@@ -1,0 +1,284 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+
+    /* -------****   PALETA DE COLORES  ****------- */
+
+        --blue-dark: #0D2878;
+        --blue-semi-dark:#314378;
+        --blue-light: #668BF9;
+        --blue-semi-light: #1B52F7;
+        --blue: #1643C7;
+
+        --black-dark: #181818;
+        --white-dark: #bebebe;
+        
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.up-page-btn{
+    position: relative;
+    opacity: 60%;
+}
+    .up-page-btn a{
+        position: absolute;
+        bottom: 45px;
+        right: 50px;
+        background-color: var(--blue-semi-light);
+        color: #fff;
+        border-radius: 40px;
+        font-size: 18px;
+        padding: 15px;
+        position: fixed;
+        text-decoration: none;
+    }
+        .up-page-btn a:hover{
+            color: var(--blue-dark);
+            box-shadow: 2px 2px 3px #242424;
+
+        }
+
+header{
+    /* background: rgba(255, 255, 255, .5); */
+    width: 100%;
+
+    /* position: fixed; */
+    z-index: 999999;
+    display: inline-block;
+    
+}
+
+.bg-header{
+    width: 100%;
+}
+.bg-header img{
+    width: 100%;
+}
+
+.logo-position{
+    display: flex;
+    justify-content: center;
+}
+
+.logotype{
+    margin: 0 auto;
+    width: 15%;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 20px 0;
+}
+    nav a{
+        padding: 5px;
+        text-decoration: none;
+        color: var(--blue);
+        font-size: 19px;
+        border: none;
+        position: relative;
+        margin: 0 15px;
+    }
+
+    nav a:before{
+        content: "";
+        width: 0px;
+        display: block;
+        height: 3px;
+        background: var(--blue-semi-light);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transition: all .2s;
+    }
+        nav a:hover:before{
+            width: 100%;
+            left: 0;
+        }
+
+
+.position-sn{
+    display: flex;
+    position: absolute;
+    right: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 40px 0 0 0;
+
+}
+    .position-sn a{
+        margin: 0 30px 0 0;
+        font-size: 23px;
+        color: var(--black-dark);
+        border: none;
+
+    }
+        .position-sn a:hover{
+            color: var(--blue-semi-dark);
+            transition: all .5s;
+        }
+
+
+.position-np{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 10px 20px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+    .position-np p:hover{
+        color: var(--blue-semi-dark);
+        transition: all .4s;
+
+    }
+
+
+
+
+.bg-main{
+    width: 100%;
+    height: 900px;
+    background: url(../img/fondos/fondo4edit.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.position-bg-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    margin: 0 0 30px 0;
+    
+}
+    .position-bg-main p{
+        font-size: 40px;
+        font-family: 'Pacifico', cursive;
+        font-style: italic;
+        color: rgb(20, 20, 20);
+
+    }
+
+.position-bg-main .btn-view-more{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--blue-light);
+    border-radius: 30px;
+    padding: 10px 25px;
+    border: var(--blue-light) solid 3px;
+    transition: all .3s;
+}
+.btn-view-more:hover{
+    border: var(--blue-semi-light) solid 3px;
+    color: var(--blue-semi-light);
+}
+
+
+
+
+/* ---  MAIN-GALLERY  --- */
+
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.tittle-sections-content{
+    display: flex;
+    justify-content: center;
+
+}
+    .tittle-sections-content h3{
+        font-size: 30px;
+        color: var(--blue);
+        margin: 100px 0 30px 0;
+    }
+
+    .tittle-sections-content h3:before{
+        content: "";
+        display: block;
+        background: #1643C7;
+        height: 5px;
+        display: flex;
+        
+        align-content: flex-end;
+    }
+
+
+    
+
+.gallery .img-content{
+    width: 100%;
+    text-align: center;
+
+}
+
+    .gallery img{
+        width: 15%;
+        margin: 10px 20px 10px 20px;
+        
+
+    }
+    .gallery .img-content .hover-img:hover{
+        box-shadow: #181818 3px 3px 10px;
+        width: 16%;
+        transition: all .4s;
+        border-radius: 5px;
+    }
+
+
+
+
+    .horario-position{
+        /* margin: 150px 20px 0 0; */
+    }
+
+
+    /* ---  MAIN-tiemetable --- */
+
+.timetable{
+    width: 100%;
+    height: 500px;
+    background: url(../img/fondos/fondo4edit.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 150px 0 1000px 0;
+    
+}
+    .timetable-content{
+        width: 100%;
+        text-align: center;
+        
+    }
+        .timetable-content p{
+            color: var(--blue-semi-light);
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        .timetable-content p span{
+            color: var(--blue-light);
+            font-size: 19px;
+        }
+
+
+
